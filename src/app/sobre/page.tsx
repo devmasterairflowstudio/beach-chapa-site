@@ -109,7 +109,7 @@ export default function SobrePage() {
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="font-logo text-3xl font-bold text-espuma mb-8">faça parte do chapa</h2>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/" className="bg-espuma text-brasa font-bold px-8 py-4 rounded-pill inline-block hover:bg-areia transition-colors">pedir agora</Link>
+            <a href="https://app.chapa.delivery/" target="_blank" rel="noopener noreferrer" className="bg-espuma text-brasa font-bold px-8 py-4 rounded-pill inline-block hover:bg-areia transition-colors">Pedir agora</a>
             <a href={siteConfig.vendorSignupUrl} target="_blank" rel="noopener noreferrer" className="bg-espuma/10 border border-espuma/30 text-espuma font-semibold px-8 py-4 rounded-pill inline-block hover:bg-espuma/20 transition-colors">sou vendedor</a>
           </div>
         </div>

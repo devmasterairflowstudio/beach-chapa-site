@@ -1,10 +1,10 @@
 const benefits = [
-  { icon: '🏖️', title: 'peça sem sair da canga', desc: 'Fique deitado. Seu pedido vem até você.' },
-  { icon: '📍', title: 'veja quem está perto', desc: 'Vendedores próximos com distância em tempo real.' },
-  { icon: '💸', title: 'pague sem dinheiro', desc: 'Pix, cartão e link de pagamento digital.' },
-  { icon: '📦', title: 'acompanhe seu pedido', desc: 'Saiba o status do pedido em tempo real.' },
-  { icon: '⭐', title: 'favoritos da sua praia', desc: 'Salve seus vendedores preferidos.' },
-  { icon: '✅', title: 'vendedores verificados', desc: 'Parceiros cadastrados e validados pelo CHAPA.' },
+  { icon: '🏖️', title: 'Peça sem sair da canga', desc: 'Fique deitado. Seu pedido vem até você.' },
+  { icon: '📍', title: 'Veja quem está perto', desc: 'Vendedores próximos com distância em tempo real.' },
+  { icon: '💸', title: 'Pague sem dinheiro', desc: 'Pix, cartão e link de pagamento digital.' },
+  { icon: '📦', title: 'Acompanhe seu pedido', desc: 'Saiba o status do pedido em tempo real.' },
+  { icon: '⭐', title: 'Favoritos da sua praia', desc: 'Salve seus vendedores preferidos.' },
+  { icon: '✅', title: 'Vendedores verificados', desc: 'Parceiros cadastrados e validados pelo CHAPA.' },
 ]
 
 export function Benefits() {

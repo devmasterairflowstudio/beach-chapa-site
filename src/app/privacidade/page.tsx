@@ -18,10 +18,6 @@ export default function PrivacidadePage() {
       </section>
       <section className="py-12">
         <div className="max-w-3xl mx-auto px-4 space-y-6">
-          <div className="bg-sol/10 border border-sol/30 rounded-xl p-4 text-sm text-tinta/70">
-            <strong>Aviso:</strong> Este documento é uma versão inicial. Deve ser revisado por assessoria jurídica antes da publicação oficial.
-          </div>
-
           <Block title="1. Quem somos">
             O CHAPA Delivery é uma plataforma digital desenvolvida e operada pela <strong>{siteConfig.companyName}</strong>. Nosso objetivo é conectar clientes, vendedores, ambulantes, barracas, quiosques e parceiros da economia da praia em uma experiência simples e segura.
           </Block>

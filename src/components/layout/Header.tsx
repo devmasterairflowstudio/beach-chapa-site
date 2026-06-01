@@ -42,12 +42,14 @@ export function Header() {
           >
             sou vendedor
           </a>
-          <Link
-            href="/"
+          <a
+            href="https://app.chapa.delivery/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-brasa hover:bg-brasa-deep text-espuma text-sm font-semibold px-4 py-2 rounded-pill transition-colors duration-200"
           >
-            pedir agora
-          </Link>
+            Pedir agora
+          </a>
         </div>
 
         <button
@@ -87,13 +89,15 @@ export function Header() {
           >
             sou vendedor
           </a>
-          <Link
-            href="/"
+          <a
+            href="https://app.chapa.delivery/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-brasa text-espuma text-sm font-semibold px-4 py-3 rounded-pill text-center"
             onClick={() => setOpen(false)}
           >
-            pedir agora
-          </Link>
+            Pedir agora
+          </a>
         </div>
       )}
     </header>

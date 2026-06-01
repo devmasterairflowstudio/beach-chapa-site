@@ -32,9 +32,14 @@ export function VendorsNearby() {
                 ))}
               </div>
 
-              <button className="w-full bg-mare hover:bg-mare-deep text-espuma text-sm font-semibold py-2.5 rounded-xl transition-colors">
-                pedir agora
-              </button>
+              <a
+                href="https://app.chapa.delivery/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-mare hover:bg-mare-deep text-espuma text-sm font-semibold py-2.5 rounded-xl transition-colors block text-center"
+              >
+                Pedir agora
+              </a>
             </article>
           ))}
         </div>

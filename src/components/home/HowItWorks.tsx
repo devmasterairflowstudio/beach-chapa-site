@@ -1,8 +1,8 @@
 const steps = [
-  { num: '01', title: 'informe onde você está', desc: 'Diga seu ponto de referência na praia ou compartilhe sua localização.', icon: '📍' },
-  { num: '02', title: 'escolha um chapa perto', desc: 'Veja vendedores próximos com produtos, preços e distância em tempo real.', icon: '👀' },
-  { num: '03', title: 'peça e pague pelo celular', desc: 'Faça seu pedido e pague com Pix ou cartão sem precisar de dinheiro.', icon: '📱' },
-  { num: '04', title: 'receba na areia', desc: 'O vendedor vai até você. Sem fila, sem grito, sem sair da canga.', icon: '🏖️' },
+  { num: '01', title: 'Informe onde você está', desc: 'Diga seu ponto de referência na praia ou compartilhe sua localização.', icon: '📍' },
+  { num: '02', title: 'Escolha um Chapa perto', desc: 'Veja vendedores próximos com produtos, preços e distância em tempo real.', icon: '👀' },
+  { num: '03', title: 'Peça e pague pelo celular', desc: 'Faça seu pedido e pague com Pix ou cartão sem precisar de dinheiro.', icon: '📱' },
+  { num: '04', title: 'Receba na areia', desc: 'O vendedor vai até você. Sem fila, sem grito, sem sair da canga.', icon: '🏖️' },
 ]
 
 export function HowItWorks() {

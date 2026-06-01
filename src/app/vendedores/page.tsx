@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { siteConfig } from '@/config/site'
+import { IPhoneMockup } from '@/components/ui/IPhoneMockup'
+import { VendorScreenDashboard, VendorScreenOrder, VendorScreenCatalog } from '@/components/home/VendorScreens'
 
 export const metadata: Metadata = {
   title: 'Venda na praia pelo CHAPA Delivery',
@@ -7,18 +9,18 @@ export const metadata: Metadata = {
 }
 
 const partnerTypes = [
-  'ambulantes', 'barraqueiros', 'quiosques',
-  'restaurantes da orla', 'vendedores de bebidas',
-  'vendedores de açaí', 'aluguel de cadeira e guarda-sol', 'operadores locais',
+  'Ambulantes', 'Barraqueiros', 'Quiosques',
+  'Restaurantes da orla', 'Vendedores de bebidas',
+  'Vendedores de açaí', 'Aluguel de cadeira e guarda-sol', 'Operadores locais',
 ]
 
 const benefits = [
-  { icon: '👁️', title: 'mais visibilidade', desc: 'Apareça para clientes que já estão na praia perto de você.' },
-  { icon: '📋', title: 'pedido organizado', desc: 'Receba pedidos no celular sem depender de grito ou aceno.' },
-  { icon: '💸', title: 'pagamento digital', desc: 'Pix e cartão integrados. Menos troco, mais agilidade.' },
-  { icon: '📍', title: 'cliente perto', desc: 'Conectado com quem está na sua área de atendimento.' },
-  { icon: '🍽️', title: 'cardápio simples', desc: 'Monte e atualize seus produtos na hora, pelo celular.' },
-  { icon: '📱', title: 'operação no celular', desc: 'Tudo em um app simples, sem precisar de equipamento extra.' },
+  { icon: '👁️', title: 'Mais visibilidade', desc: 'Apareça para clientes que já estão na praia perto de você.' },
+  { icon: '📋', title: 'Pedido organizado', desc: 'Receba pedidos no celular sem depender de grito ou aceno.' },
+  { icon: '💸', title: 'Pagamento digital', desc: 'Pix e cartão integrados. Menos troco, mais agilidade.' },
+  { icon: '📍', title: 'Cliente perto', desc: 'Conectado com quem está na sua área de atendimento.' },
+  { icon: '🍽️', title: 'Cardápio simples', desc: 'Monte e atualize seus produtos na hora, pelo celular.' },
+  { icon: '📱', title: 'Operação no celular', desc: 'Tudo em um app simples, sem precisar de equipamento extra.' },
 ]
 
 export default function VendedoresPage() {
@@ -39,7 +41,7 @@ export default function VendedoresPage() {
             rel="noopener noreferrer"
             className="bg-brasa hover:bg-brasa-deep text-espuma font-bold px-10 py-4 rounded-pill text-lg transition-colors inline-block"
           >
-            fazer cadastro agora
+            Fazer cadastro agora
           </a>
         </div>
       </section>
@@ -48,17 +50,17 @@ export default function VendedoresPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="font-logo text-3xl md:text-4xl font-bold text-tinta text-center mb-4">
-            vender na praia é movimento.<br />o CHAPA ajuda no fluxo.
+            Vender na praia é movimento.<br />O CHAPA ajuda no fluxo.
           </h2>
-          <p className="text-center text-tinta/60 mb-10">a gente sabe que não é fácil:</p>
+          <p className="text-center text-tinta/60 mb-10">A gente sabe que não é fácil:</p>
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-2xl mx-auto">
             {[
-              'difícil ser encontrado por novos clientes',
-              'cliente não sabe quem está perto',
-              'pagamento em dinheiro atrasa o atendimento',
-              'pedido verbal se perde no movimento',
-              'fila nos horários de pico',
-              'pouca previsibilidade de demanda',
+              'Difícil ser encontrado por novos clientes',
+              'Cliente não sabe quem está perto',
+              'Pagamento em dinheiro atrasa o atendimento',
+              'Pedido verbal se perde no movimento',
+              'Fila nos horários de pico',
+              'Pouca previsibilidade de demanda',
             ].map((pain) => (
               <li key={pain} className="flex items-start gap-3 bg-areia/40 rounded-xl p-4 border border-linha">
                 <span className="text-brasa text-lg shrink-0" aria-hidden="true">→</span>
@@ -72,14 +74,14 @@ export default function VendedoresPage() {
       {/* Como funciona */}
       <section className="py-20 bg-areia/30">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-12">como funciona para vendedores</h2>
+          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-12">Como funciona para vendedores</h2>
           <div className="grid grid-cols-1 sm:grid-cols-5 gap-4 items-center">
             {[
-              { step: '1', label: 'cadastre seu perfil' },
-              { step: '2', label: 'monte seu cardápio' },
-              { step: '3', label: 'fique online na praia' },
-              { step: '4', label: 'receba pedidos' },
-              { step: '5', label: 'entregue e venda mais' },
+              { step: '1', label: 'Cadastre seu perfil' },
+              { step: '2', label: 'Monte seu cardápio' },
+              { step: '3', label: 'Fique online na praia' },
+              { step: '4', label: 'Receba pedidos' },
+              { step: '5', label: 'Entregue e venda mais' },
             ].map((s, i, arr) => (
               <div key={s.step} className="contents">
                 <div className="bg-white rounded-2xl p-5 border border-linha text-center shadow-sm">
@@ -100,7 +102,7 @@ export default function VendedoresPage() {
       {/* Benefícios */}
       <section className="py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
-          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-12">por que ser chapa?</h2>
+          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-12">Por que ser Chapa?</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             {benefits.map((b) => (
               <div key={b.title} className="bg-espuma rounded-2xl p-6 border border-linha">
@@ -116,7 +118,7 @@ export default function VendedoresPage() {
       {/* Tipos de parceiros */}
       <section className="py-16 bg-areia/20 border-y border-linha">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="font-logo text-2xl font-bold text-tinta mb-8">quem pode ser chapa</h2>
+          <h2 className="font-logo text-2xl font-bold text-tinta mb-8">Quem pode ser Chapa</h2>
           <div className="flex flex-wrap justify-center gap-3">
             {partnerTypes.map((type) => (
               <span key={type} className="bg-white border border-linha text-tinta/70 text-sm px-4 py-2 rounded-pill">
@@ -127,45 +129,17 @@ export default function VendedoresPage() {
         </div>
       </section>
 
-      {/* Mockup do painel */}
+      {/* Mockup do painel do vendedor */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-12">seu painel na praia</h2>
-          <div className="max-w-sm mx-auto bg-tinta rounded-3xl p-3 shadow-lg">
-            <div className="bg-espuma rounded-2xl overflow-hidden">
-              <div className="bg-mare px-4 py-3 flex items-center justify-between">
-                <span className="font-logo font-bold text-espuma">chapa vendedor</span>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-mata rounded-full animate-pulse" aria-hidden="true"></div>
-                  <span className="text-xs text-espuma font-mono">online</span>
-                </div>
-              </div>
-              <div className="p-4 space-y-3">
-                <div className="grid grid-cols-3 gap-2 text-center">
-                  <div className="bg-areia rounded-xl p-3">
-                    <span className="font-mono text-lg font-bold text-mare block">12</span>
-                    <span className="text-xs text-tinta/50">pedidos</span>
-                  </div>
-                  <div className="bg-areia rounded-xl p-3">
-                    <span className="font-mono text-lg font-bold text-mata block">R$284</span>
-                    <span className="text-xs text-tinta/50">hoje</span>
-                  </div>
-                  <div className="bg-areia rounded-xl p-3">
-                    <span className="font-mono text-lg font-bold text-sol block">4.9</span>
-                    <span className="text-xs text-tinta/50">nota</span>
-                  </div>
-                </div>
-                <div className="bg-brasa/10 border border-brasa/20 rounded-xl p-4">
-                  <p className="text-xs text-tinta/50 mb-1">novo pedido</p>
-                  <p className="font-semibold text-tinta text-sm">2x Açaí 300ml — R$ 36</p>
-                  <p className="text-xs text-tinta/50">📍 Posto 9 · Barraca 14</p>
-                  <div className="flex gap-2 mt-3">
-                    <button className="flex-1 bg-mata text-espuma text-xs font-semibold py-2 rounded-xl">aceitar pedido</button>
-                    <button className="flex-1 bg-tinta/10 text-tinta text-xs font-semibold py-2 rounded-xl">ver mais</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="max-w-5xl mx-auto px-4">
+          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-4">Seu painel na praia</h2>
+          <p className="text-center text-tinta/60 mb-12">Gerencie tudo pelo celular — pedidos, cardápio e faturamento em tempo real.</p>
+          <div className="flex justify-center">
+            <IPhoneMockup screens={[
+              <VendorScreenDashboard key="dashboard" />,
+              <VendorScreenOrder key="order" />,
+              <VendorScreenCatalog key="catalog" />,
+            ]} />
           </div>
         </div>
       </section>
@@ -174,7 +148,7 @@ export default function VendedoresPage() {
       <section className="py-20 bg-brasa">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="font-logo text-3xl md:text-5xl font-bold text-espuma mb-6">
-            pronto para virar chapa?
+            Pronto para virar Chapa?
           </h2>
           <p className="text-espuma/80 text-lg mb-8">
             Cadastre-se agora e comece a receber pedidos de clientes que já estão na areia.
@@ -185,7 +159,7 @@ export default function VendedoresPage() {
             rel="noopener noreferrer"
             className="bg-espuma text-brasa hover:bg-areia font-bold px-10 py-4 rounded-pill text-lg transition-colors inline-block"
           >
-            fazer cadastro agora
+            Fazer cadastro agora
           </a>
         </div>
       </section>

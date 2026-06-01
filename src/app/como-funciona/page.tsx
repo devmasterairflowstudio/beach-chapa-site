@@ -18,13 +18,13 @@ export default function ComoFuncionaPage() {
 
       <section className="py-20">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-14">para quem pede</h2>
+          <h2 className="font-logo text-3xl font-bold text-tinta text-center mb-14">Para quem pede</h2>
           <div className="space-y-8">
             {[
-              { n: '1', icon: '📍', title: 'informe onde você está', body: 'Diga seu ponto de referência na praia — número do posto, nome da barraca, ou compartilhe sua localização pelo GPS. Você não precisa baixar nenhum app.' },
-              { n: '2', icon: '👀', title: 'escolha um vendedor perto', body: 'Veja os chapas disponíveis com distância, produtos e preços. Filtre por categoria: coco, açaí, bebidas, petiscos, almoço e muito mais.' },
-              { n: '3', icon: '📱', title: 'faça seu pedido', body: 'Escolha o que quer, confirme o pedido e pague pelo celular. Pix, cartão de crédito ou débito. Sem precisar de dinheiro na bolsa.' },
-              { n: '4', icon: '🏖️', title: 'receba na areia', body: 'O vendedor vai até você com seu pedido. Acompanhe o status em tempo real. Sem fila, sem grito, sem sair da canga.' },
+              { n: '1', icon: '📍', title: 'Informe onde você está', body: 'Diga seu ponto de referência na praia — número do posto, nome da barraca, ou compartilhe sua localização pelo GPS. Você não precisa baixar nenhum app.' },
+              { n: '2', icon: '👀', title: 'Escolha um vendedor perto', body: 'Veja os chapas disponíveis com distância, produtos e preços. Filtre por categoria: coco, açaí, bebidas, petiscos, almoço e muito mais.' },
+              { n: '3', icon: '📱', title: 'Faça seu pedido', body: 'Escolha o que quer, confirme o pedido e pague pelo celular. Pix, cartão de crédito ou débito. Sem precisar de dinheiro na bolsa.' },
+              { n: '4', icon: '🏖️', title: 'Receba na areia', body: 'O vendedor vai até você com seu pedido. Acompanhe o status em tempo real. Sem fila, sem grito, sem sair da canga.' },
             ].map((step) => (
               <div key={step.n} className="flex gap-6 items-start">
                 <div className="w-14 h-14 bg-mare rounded-full flex items-center justify-center shrink-0">
@@ -32,7 +32,7 @@ export default function ComoFuncionaPage() {
                 </div>
                 <div className="flex-1 pt-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <span className="font-mono text-xs text-tinta/30 font-medium">passo {step.n}</span>
+                    <span className="font-mono text-xs text-tinta/30 font-medium">Passo {step.n}</span>
                     <h3 className="font-semibold text-tinta text-lg">{step.title}</h3>
                   </div>
                   <p className="text-tinta/70 leading-relaxed">{step.body}</p>
@@ -42,9 +42,14 @@ export default function ComoFuncionaPage() {
           </div>
 
           <div className="mt-16 text-center">
-            <Link href="/" className="bg-brasa hover:bg-brasa-deep text-espuma font-bold px-10 py-4 rounded-pill text-lg transition-colors inline-block">
-              pedir agora
-            </Link>
+            <a
+              href="https://app.chapa.delivery/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-brasa hover:bg-brasa-deep text-espuma font-bold px-10 py-4 rounded-pill text-lg transition-colors inline-block"
+            >
+              Pedir agora
+            </a>
           </div>
         </div>
       </section>

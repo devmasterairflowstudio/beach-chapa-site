@@ -18,13 +18,13 @@ export function PartnerCTA() {
             rel="noopener noreferrer"
             className="bg-brasa hover:bg-brasa-deep text-espuma font-semibold px-8 py-4 rounded-pill text-base transition-colors inline-block"
           >
-            quero vender pelo CHAPA
+            Quero vender pelo CHAPA
           </a>
           <Link
             href="/vendedores"
             className="bg-espuma/10 hover:bg-espuma/20 text-espuma font-semibold px-8 py-4 rounded-pill text-base transition-colors border border-espuma/20 inline-block"
           >
-            ver como funciona para vendedores
+            Ver como funciona para vendedores
           </Link>
         </div>
       </div>

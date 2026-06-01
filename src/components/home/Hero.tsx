@@ -1,8 +1,7 @@
-import { HeroVideo } from '@/components/home/HeroVideo'
 import { IPhoneMockup } from '@/components/ui/IPhoneMockup'
 import { ScreenHome, ScreenSearch, ScreenVendor } from '@/components/home/AppScreens'
 
-const quickChips = ['água de coco', 'açaí', 'bebidas', 'petiscos', 'almoço', 'cadeiras', 'guarda-sol', 'gelo']
+const quickChips = ['Água de coco', 'Açaí', 'Bebidas', 'Petiscos', 'Almoço', 'Cadeiras', 'Guarda-sol', 'Gelo']
 
 export function Hero() {
   return (
@@ -26,14 +25,19 @@ export function Hero() {
                 </svg>
                 <input
                   type="text"
-                  placeholder="onde você está na praia?"
+                  placeholder="Onde você está na praia?"
                   className="flex-1 bg-transparent text-tinta placeholder-tinta/40 text-sm outline-none font-sans"
                   aria-label="Informe sua localização na praia"
                 />
               </div>
-              <button className="bg-brasa hover:bg-brasa-deep text-espuma text-sm font-semibold px-5 py-3 rounded-lg transition-colors whitespace-nowrap">
-                ver vendedores
-              </button>
+              <a
+                href="https://app.chapa.delivery/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brasa hover:bg-brasa-deep text-espuma text-sm font-semibold px-5 py-3 rounded-lg transition-colors whitespace-nowrap"
+              >
+                Ver vendedores
+              </a>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-8">
@@ -46,13 +50,18 @@ export function Hero() {
                 </button>
               ))}
             </div>
+
+            <a
+              href="https://app.chapa.delivery/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-brasa hover:bg-brasa-deep text-espuma font-bold px-8 py-4 rounded-pill text-base transition-colors inline-block"
+            >
+              Pedir agora
+            </a>
           </div>
 
-          <div className="flex flex-col gap-6 items-center lg:items-end">
-            {/* Vídeo de praia — visível em mobile abaixo da headline, em desktop ao lado */}
-            <div className="w-full max-w-sm lg:max-w-none lg:w-80">
-              <HeroVideo />
-            </div>
+          <div className="flex flex-col items-center lg:items-end">
             <div className="relative">
               <IPhoneMockup screens={[<ScreenHome key="home" />, <ScreenSearch key="search" />, <ScreenVendor key="vendor" />]} />
               <div className="absolute -top-4 -right-4 w-12 h-12 bg-sol rounded-full flex items-center justify-center shadow-md animate-sun-pulse">
