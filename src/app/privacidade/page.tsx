@@ -13,7 +13,7 @@ export default function PrivacidadePage() {
       <section className="bg-tinta text-espuma pt-16 pb-12">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="font-logo text-3xl md:text-4xl font-black mb-2">política de privacidade</h1>
-          <p className="text-espuma/50 text-sm">{'Última atualização: {{DATA_ATUALIZACAO}} — versão inicial, sujeita a revisão jurídica'}</p>
+          <p className="text-espuma/50 text-sm">Última atualização: 01/06/2026 — versão inicial, sujeita a revisão jurídica</p>
         </div>
       </section>
       <section className="py-12">
@@ -77,7 +77,7 @@ export default function PrivacidadePage() {
           </Block>
 
           <Block title="11. Seus direitos (LGPD)">
-            Você tem direito a: confirmar se tratamos seus dados; acessar seus dados; corrigir dados incompletos ou desatualizados; solicitar a eliminação de dados desnecessários; solicitar anonimização ou portabilidade; saber com quem compartilhamos seus dados; revogar consentimento; e se opor ao tratamento em determinadas situações. Para exercer seus direitos, entre em contato pelo e-mail: <strong>{'{{EMAIL_PRIVACIDADE}}'}</strong>.
+            Você tem direito a: confirmar se tratamos seus dados; acessar seus dados; corrigir dados incompletos ou desatualizados; solicitar a eliminação de dados desnecessários; solicitar anonimização ou portabilidade; saber com quem compartilhamos seus dados; revogar consentimento; e se opor ao tratamento em determinadas situações. Para exercer seus direitos, entre em contato pelo e-mail: <strong>lgpd@chapa.delivery</strong>.
           </Block>
 
           <Block title="12. Menores de idade">
@@ -89,7 +89,7 @@ export default function PrivacidadePage() {
           </Block>
 
           <Block title="14. Fale conosco sobre privacidade">
-            Para dúvidas, solicitações ou exercício de direitos relacionados a esta política, entre em contato: <strong>{'{{EMAIL_PRIVACIDADE}}'}</strong>
+            Para dúvidas, solicitações ou exercício de direitos relacionados a esta política, entre em contato: <strong>lgpd@chapa.delivery</strong>
           </Block>
         </div>
       </section>

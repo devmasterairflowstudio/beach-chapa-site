@@ -14,7 +14,7 @@ export default function TermosPage() {
       <section className="bg-tinta text-espuma pt-16 pb-12">
         <div className="max-w-3xl mx-auto px-4">
           <h1 className="font-logo text-3xl md:text-4xl font-black mb-2">termos de uso</h1>
-          <p className="text-espuma/50 text-sm">{'Última atualização: {{DATA_ATUALIZACAO}} — versão inicial, sujeita a revisão jurídica'}</p>
+          <p className="text-espuma/50 text-sm">Última atualização: 01/06/2026 — versão inicial, sujeita a revisão jurídica</p>
         </div>
       </section>
       <section className="py-12">
@@ -52,7 +52,7 @@ export default function TermosPage() {
           </Block>
 
           <Block title="8. Cancelamentos e reembolsos">
-            Cancelamentos podem ser solicitados pelo cliente antes do vendedor aceitar o pedido. Após o aceite, o cancelamento depende da análise do caso. Reembolsos são processados conforme o meio de pagamento utilizado e a análise da situação. Entre em contato com o suporte em caso de problemas: <strong>{'{{EMAIL_SUPORTE}}'}</strong>.
+            Cancelamentos podem ser solicitados pelo cliente antes do vendedor aceitar o pedido. Após o aceite, o cancelamento depende da análise do caso. Reembolsos são processados conforme o meio de pagamento utilizado e a análise da situação. Entre em contato com o suporte em caso de problemas: <strong>fale@chapa.delivery</strong>.
           </Block>
 
           <Block title="9. Responsabilidades da plataforma">
@@ -82,7 +82,7 @@ export default function TermosPage() {
           </Block>
 
           <Block title="15. Contato">
-            Para dúvidas ou solicitações relacionadas a estes termos, entre em contato: <strong>{'{{EMAIL_SUPORTE}}'}</strong>
+            Para dúvidas ou solicitações relacionadas a estes termos, entre em contato: <strong>fale@chapa.delivery</strong>
           </Block>
         </div>
       </section>
