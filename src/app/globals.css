@@ -1,27 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-mare: #0E5E78;
+  --color-brasa: #E15A35;
+  --color-sol: #F2B23C;
+  --color-areia: #F4EDE0;
+  --color-espuma: #FBF8F2;
+  --color-tinta: #161620;
+  --color-linha: #E2D9C5;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html { 
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, sans-serif;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    background-color: #FBF8F2;
+    color: #161620;
+  }
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+  }
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+  .font-logo { font-family: 'Fraunces', Georgia, serif; }
+  .font-mono { font-family: 'DM Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+  .text-balance { text-wrap: balance; }
 }
