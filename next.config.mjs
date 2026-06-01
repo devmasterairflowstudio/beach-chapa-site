@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Necessário para Cloudflare Workers
   images: {
-    remotePatterns: [],
+    unoptimized: true,
   },
 }
 export default nextConfig
