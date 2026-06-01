@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 220" width="720" height="220">
+  <title>CHAPA — Horizontal lockup (Reverse)</title>
+  <rect width="720" height="220" fill="#161620"></rect>
+  <g transform="translate(30, 30)">
+    <path d="M 126 48 A 48 48 0 1 0 126 112" fill="none" stroke="#FBF8F2" stroke-width="24" stroke-linecap="round"></path>
+    <circle cx="102" cy="80" r="10.4" fill="#F2B23C"></circle>
+  </g>
+  <text x="200" y="148" font-family="Fraunces, Georgia, serif" font-size="148" font-weight="800" letter-spacing="-6" fill="#FBF8F2">chapa</text>
+  <circle cx="566" cy="148" r="10" fill="#F2B23C"></circle>
+</svg>
