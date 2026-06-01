@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Necessário para Cloudflare Workers
-  images: {
-    unoptimized: true,
+  images: { unoptimized: true },
+  async redirects() {
+    return [
+      { source: '/contato', destination: '/faq', permanent: true },
+    ]
   },
 }
 export default nextConfig
