@@ -26,6 +26,11 @@ export const beaches: Beach[] = [
   { name: 'Barequeçaba', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
   { name: 'Cigarras', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
   { name: 'São Francisco', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
+  { name: 'Baleia', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
+  { name: 'Praia Preta', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
+  { name: 'Arrastão', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
+  { name: 'Porto Grande', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
+  { name: 'Santiago', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'activation' },
   { name: 'Jureia', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'comingSoon' },
   { name: 'Paúba', city: 'São Sebastião', state: 'SP', region: 'Litoral Norte SP', status: 'comingSoon' },
   // Ubatuba

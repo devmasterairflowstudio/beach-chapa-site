@@ -1,4 +1,5 @@
 import { Badge } from '@/components/ui/Badge'
+import { HeroVideo } from '@/components/home/HeroVideo'
 
 const quickChips = ['água de coco', 'açaí', 'bebidas', 'petiscos', 'almoço', 'cadeiras', 'guarda-sol', 'gelo']
 
@@ -46,7 +47,11 @@ export function Hero() {
             </div>
           </div>
 
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex flex-col gap-6 items-center lg:items-end">
+            {/* Vídeo de praia — visível em mobile abaixo da headline, em desktop ao lado */}
+            <div className="w-full max-w-sm lg:max-w-none lg:w-80">
+              <HeroVideo />
+            </div>
             <div className="relative w-72 md:w-80">
               <div className="bg-tinta rounded-3xl p-3 shadow-lg relative">
                 <div className="bg-espuma rounded-2xl overflow-hidden">
