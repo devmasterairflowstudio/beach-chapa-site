@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { siteConfig } from '@/config/site'
+import { ChapaLogo } from '@/components/brand/ChapaLogo'
 
 const navLinks = [
   { href: '/como-funciona', label: 'como funciona' },
@@ -16,11 +17,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-espuma/90 backdrop-blur-md border-b border-linha">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2" aria-label="CHAPA Delivery - página inicial">
-          <div className="w-8 h-8 bg-mare rounded-md flex items-center justify-center">
-            <span className="font-logo font-black text-espuma text-lg leading-none">C</span>
-          </div>
-          <span className="font-logo font-bold text-tinta text-xl tracking-tight">chapa</span>
+        <Link href="/" aria-label="CHAPA Delivery - página inicial">
+          <ChapaLogo size="md" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-6" aria-label="Navegação principal">

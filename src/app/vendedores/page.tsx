@@ -81,17 +81,17 @@ export default function VendedoresPage() {
               { step: '4', label: 'receba pedidos' },
               { step: '5', label: 'entregue e venda mais' },
             ].map((s, i, arr) => (
-              <>
-                <div key={s.step} className="bg-white rounded-2xl p-5 border border-linha text-center shadow-sm">
+              <div key={s.step} className="contents">
+                <div className="bg-white rounded-2xl p-5 border border-linha text-center shadow-sm">
                   <div className="w-10 h-10 bg-mare rounded-full flex items-center justify-center text-espuma font-mono font-bold text-sm mx-auto mb-3">
                     {s.step}
                   </div>
                   <p className="text-sm font-medium text-tinta">{s.label}</p>
                 </div>
                 {i < arr.length - 1 && (
-                  <div key={`arrow-${i}`} className="hidden sm:flex justify-center text-tinta/20 text-2xl" aria-hidden="true">→</div>
+                  <div className="hidden sm:flex justify-center text-tinta/20 text-2xl" aria-hidden="true">→</div>
                 )}
-              </>
+              </div>
             ))}
           </div>
         </div>

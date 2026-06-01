@@ -4,7 +4,7 @@ import { siteConfig } from '@/config/site'
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     '', '/vendedores', '/como-funciona', '/praias',
-    '/seguranca', '/sobre', '/faq', '/contato',
+    '/seguranca', '/sobre', '/faq',
     '/privacidade', '/termos',
   ]
   return routes.map((route) => ({
