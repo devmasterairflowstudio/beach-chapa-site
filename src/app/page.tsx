@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
 import { Hero } from '@/components/home/Hero'
-import { CategorySection } from '@/components/home/CategorySection'
+import { Benefits } from '@/components/home/Benefits'
 import { HowItWorks } from '@/components/home/HowItWorks'
 import { VendorsNearby } from '@/components/home/VendorsNearby'
-import { Benefits } from '@/components/home/Benefits'
 import { PartnerCTA } from '@/components/home/PartnerCTA'
 import { SocialProof } from '@/components/home/SocialProof'
 import { FaqSection } from '@/components/home/FaqSection'
@@ -21,10 +20,9 @@ export default function HomePage() {
       <WebSiteJsonLd />
       <SoftwareAppJsonLd />
       <Hero />
-      <CategorySection />
+      <Benefits />
       <HowItWorks />
       <VendorsNearby />
-      <Benefits />
       <SocialProof />
       <PartnerCTA />
       <FaqSection />

@@ -19,11 +19,17 @@ export function Benefits() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           {benefits.map((b) => (
-            <div key={b.title} className="bg-white rounded-2xl p-6 border border-linha">
+            <a
+              key={b.title}
+              href="https://app.chapa.delivery/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-2xl p-6 border border-linha hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 block"
+            >
               <span className="text-3xl mb-4 block" role="img" aria-hidden="true">{b.icon}</span>
               <h3 className="font-semibold text-tinta mb-2">{b.title}</h3>
               <p className="text-sm text-tinta/60 leading-relaxed">{b.desc}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

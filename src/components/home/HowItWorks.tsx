@@ -22,14 +22,19 @@ export function HowItWorks() {
               {i < steps.length - 1 && (
                 <div className="hidden md:block absolute top-8 left-full w-full h-px bg-gradient-to-r from-linha to-transparent z-0" aria-hidden="true" />
               )}
-              <div className="bg-white rounded-2xl p-6 border border-linha shadow-sm relative z-10 h-full">
+              <a
+                href="https://app.chapa.delivery/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white rounded-2xl p-6 border border-linha shadow-sm relative z-10 h-full hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 block"
+              >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl" role="img" aria-hidden="true">{step.icon}</span>
                   <span className="font-mono text-xs text-tinta/30 font-medium">{step.num}</span>
                 </div>
                 <h3 className="font-semibold text-tinta text-base mb-2">{step.title}</h3>
                 <p className="text-sm text-tinta/60 leading-relaxed">{step.desc}</p>
-              </div>
+              </a>
             </div>
           ))}
         </div>

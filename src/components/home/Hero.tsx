@@ -42,12 +42,15 @@ export function Hero() {
 
             <div className="flex flex-wrap gap-2 mb-8">
               {quickChips.map((chip) => (
-                <button
+                <a
                   key={chip}
+                  href="https://app.chapa.delivery/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-white border border-linha text-tinta/70 text-xs font-medium px-3 py-1.5 rounded-pill hover:border-mare hover:text-mare transition-colors"
                 >
                   {chip}
-                </button>
+                </a>
               ))}
             </div>
 
